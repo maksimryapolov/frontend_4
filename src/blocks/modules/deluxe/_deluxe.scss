@@ -1,4 +1,6 @@
 .deluxe {
+    max-width: 1600px;
+
     &__body {
         @include custom-container;
         padding-top: 100px;
