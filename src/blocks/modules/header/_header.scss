@@ -29,6 +29,7 @@
         letter-spacing: em(1);
         color: $black2;
         font-weight: 700;
+        font-size: rem(18);
 
         &:not(:last-child) {
             margin-right: 30px;
