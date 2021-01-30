@@ -1,0 +1,16 @@
+.btn-default {
+    font-size: rem(24);
+    font-weight: 700;
+    letter-spacing: rem(1.2);
+    color: $violet-light;
+    border: 2px solid $violet-light; 
+    padding: 10px 55px 10px 55px;
+    display: inline-block;
+}
+
+.btn-blue {
+    color: $white;
+    background-color: $blue;
+    border: none;
+    font-size: rem(17);
+}

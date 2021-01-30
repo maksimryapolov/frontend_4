@@ -1,0 +1,47 @@
+.achievements {
+    &__body {
+        @include custom-container;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 42px;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 35px;
+    }
+
+    &__item {
+        @media (min-width: $screen-sm) and (max-width: $sceren-sm-max) {
+            width: calc((100% - 2 * 20px) / 2);
+
+            &:nth-child(n+3) {
+                padding-top: 20px;
+            }
+        }
+
+        @media  (min-width: $screen-md) {
+            flex: 0 1 30%;
+
+            &:nth-child(n+4) {
+                margin-top: 40px;
+            }
+        }
+
+        @media (max-width: $screen-s-max) {
+            flex: 0 1 100%;
+
+            &:not(:last-child) {
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+    &__btn-block {
+        text-align: center;
+    }
+}

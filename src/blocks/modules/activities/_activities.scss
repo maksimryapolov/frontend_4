@@ -1,0 +1,107 @@
+.activities {
+    &__body {
+        padding-top: 100px;
+    }
+
+    &__title {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    &__items {
+        display: flex;
+
+        @media (max-width: $screen-md-max) {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
+    &__item {
+        position: relative;
+        color: $white;
+        z-index: 1;
+
+
+        &_img-1 {
+            background-image: url('../img/activities/activities_1.jpg');
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &_img-2 {
+            background-image: url('../img/activities/activities_2.jpg');
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &_img-3 {
+            background-image: url('../img/activities/activities_3.jpg');
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &_img-4 {
+            background-image: url('../img/activities/activities_4.jpg');
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &_img-5 {
+            background-image: url('../img/activities/activities_5.jpg');
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &::after {
+            display: inline;
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, .5);
+        }
+
+        @media (max-width: $screen-md-max) {
+            padding: 0 10px 10px 20px;
+            width: calc((100% - 0 * 20px) / 3);
+            min-height: 400px;
+        }
+
+        @media (min-width: $screen-lg) {
+            padding: 0 22px 22px 30px;
+            min-height: 598px;
+        }
+
+        @media (max-width: $screen-s-max) {
+            width: calc((100% - 4 * 20px) / 1);
+            margin: 0 auto;
+        }
+    }
+
+    &__text-wrapper {
+        position: relative;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%; 
+    }
+
+    &__item-title {
+        font-size: rem(50);
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__item-desc {
+        font-family: 'OpenSans';
+        font-size: rem(16);
+        line-height: rem(24);
+        font-weight: 300;
+        letter-spacing: em(1);
+    }
+}

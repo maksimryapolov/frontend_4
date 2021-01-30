@@ -1,0 +1,47 @@
+.section-banner {
+    padding: 94px 0 54px 0;
+    background-image: url('../img/section-banner/banner_1.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+
+    &__body {
+        @include custom-container;
+        color: $white;
+    }
+
+    &__text-wrapper {
+        @media (max-width: $sceren-sm-max) {
+            margin-left: 0;
+            width: 100%;
+        }
+
+        @media (min-width: $screen-md) {
+            width: 45%;
+            margin-left: auto;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.044em;
+
+        @media (max-width: $screen-s-max) {
+            font-size: rem(60);
+        }
+
+        @media (min-width: $screen-sm) {
+            font-size: rem(100);
+        }
+    }
+
+    &__desc {
+        line-height: rem(24);
+        text-shadow: 2px 2px 2px $black;
+        font-family: 'OpenSans';
+        font-weight: 300;
+        letter-spacing: 0.04em;
+        padding-bottom: 45px;
+    }
+}

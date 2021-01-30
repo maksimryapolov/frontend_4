@@ -1,0 +1,17 @@
+.section-title {
+    text-transform: uppercase;
+    font-size: rem(55);
+    font-weight: 700;
+    letter-spacing: rem(1.2);
+    color: $black;
+
+    &_big {
+        @media (max-width: $screen-sm) {
+            font-size: rem(50);
+        }
+
+        @media (min-width: $screen-sm) {
+            font-size: rem(80);
+        }
+    }
+}

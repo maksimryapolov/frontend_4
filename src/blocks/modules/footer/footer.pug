@@ -1,0 +1,40 @@
+footer.footer
+    .footer__body
+        .footer__logo
+            +logo('white')
+        .footer__row
+            .footer__column
+                .footer__contact-block
+                    .footer__contact-item.street 123, Main Street, NY 456789
+                    .footer__contact-item.number +12 345 67890
+                    .footer__contact-item.mail free@psdfreebies.com
+            .footer__column.footer__column_indent
+                .footer__menu-row
+                    ul.footer__menu-column
+                        li Home
+                        li About
+                        li Rooms
+                    ul.footer__menu-column
+                        li Portfolio
+                        li Blog
+                        li Partnership
+                    ul.footer__menu-column
+                        li Contact
+            .footer__column
+                .footer__social
+                    .footer__social-title We are in social networks
+                    .footer__icons
+                        a.footer__icon(href="#")
+                            svg
+                                use(xlink:href="./img/svg/footer/facebook.svg#facebook")
+                        a.footer__icon(href="#")
+                            svg
+                                use(xlink:href="./img/svg/footer/vk.svg#vk")
+                        a.footer__icon(href="#")
+                            svg
+                                use(xlink:href="./img/svg/footer/instagram.svg#instagram")
+                        a.footer__icon(href="#")
+                            svg
+                                use(xlink:href="./img/svg/footer/youtube.svg#youtube")
+        .footer__copyright
+            .footer__copyright-text Copyright 2017. PSDFreebies.com All Right Reserved

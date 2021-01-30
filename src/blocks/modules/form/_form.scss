@@ -1,0 +1,73 @@
+.form {
+    padding: 55px 0 117px 0;
+
+    &__body {
+        @include custom-container;
+        background-color: $dark-grey;
+        border-bottom: 11px solid $violet-light;
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        padding: 33px 32px;
+        flex-wrap: wrap;
+
+    }
+
+    &__input {
+        font-family: "OpenSans";
+
+        input {
+            width: 100%;
+            height: 50px;
+            padding: 0 17px;
+
+            &::placeholder {
+                opacity: 1;
+                color: $black;
+            }
+
+            &[type="submit"] {
+                border: none;
+                outline: none;
+                background-color: $violet-light;
+                color: $white;
+                text-transform: uppercase;
+                font-family: 'BebasNeue';
+                font-size: rem(20);
+                cursor: pointer;
+                letter-spacing: rem(1.2);
+                font-weight: 700;
+            }
+        }
+
+        @media (max-width: $screen-md-max) and (min-width: $screen-sm) {
+            width: calc((100% - 2 * 20px) / 2);
+
+            &:nth-child(-n+2) {
+                padding-bottom: 20px;
+            }
+
+            &:last-child {
+                padding-top: 20px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (min-width: $screen-lg) {
+            flex: 1;
+            &:not(:last-child) {
+                padding-right: 20px;
+            }
+        }
+
+        @media (max-width: $screen-s-max) {
+            width: calc((100% - 1 * 20px) / 1);
+
+            &:not(:last-child) {
+                padding-bottom: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+/*
+100 - Thin (Hairline)
+200 - Extra Light (Ultra Light)
+300 - Light
+400 - Normal
+500 - Medium
+600 - Semi Bold (Demi Bold)
+700 - Bold
+800 - Extra Bold (Ultra Bold)
+900 - Black (Heavy)
+*/
+
+@include font-face('BebasNeue', '../fonts/BebasNeue-Regular', 400);
+@include font-face('BebasNeue', '../fonts/BebasNeue-Bold', 700);
+@include font-face('OpenSans', '../fonts/OpenSans-Light', 300);
+@include font-face('OpenSans', '../fonts/OpenSans-Regular', 400);
+@include font-face('OpenSans', '../fonts/OpenSans-Bold', 700);
