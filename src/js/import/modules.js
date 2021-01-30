@@ -1,2 +1,2 @@
-import "%modules%/header/header";
+import "%modules%/mobile-menu/mobile-menu";
 import "%modules%/footer/footer";

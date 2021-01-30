@@ -20,6 +20,16 @@
         }
     }
 
+    &__menu-mobile {
+        @media (max-width: $screen-s-max) {
+            display: block;
+        }
+
+        @media (min-width: $screen-sm) {
+            display: none;
+        }
+    }
+
     &__items {
         display: flex;
     }
@@ -31,8 +41,16 @@
         font-weight: 700;
         font-size: rem(18);
 
-        &:not(:last-child) {
-            margin-right: 30px;
+        @media (max-width: $sceren-sm-max) {
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+
+        @media (min-width: $screen-md) {
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
         }
     }
 
